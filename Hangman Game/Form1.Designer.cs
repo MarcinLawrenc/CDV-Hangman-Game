@@ -72,11 +72,11 @@
             this.button27 = new System.Windows.Forms.Button();
             this.button28 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.HangmanPictureBox = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HangmanPictureBox)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -420,7 +420,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Controls.Add(this.HangmanPictureBox);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.label4);
@@ -604,16 +604,16 @@
             this.label13.Text = "kotloin";
             this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
-            // pictureBox1
+            // HangmanPictureBox
             // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Image = global::Hangman_Game.Properties.Resources._1_Stage;
-            this.pictureBox1.Location = new System.Drawing.Point(9, 25);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(165, 150);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 32;
-            this.pictureBox1.TabStop = false;
+            this.HangmanPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.HangmanPictureBox.Image = global::Hangman_Game.Properties.Resources._1_Stage;
+            this.HangmanPictureBox.Location = new System.Drawing.Point(9, 25);
+            this.HangmanPictureBox.Name = "HangmanPictureBox";
+            this.HangmanPictureBox.Size = new System.Drawing.Size(165, 150);
+            this.HangmanPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.HangmanPictureBox.TabIndex = 32;
+            this.HangmanPictureBox.TabStop = false;
             // 
             // groupBox3
             // 
@@ -668,7 +668,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HangmanPictureBox)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -720,7 +720,7 @@
         private System.Windows.Forms.Button button28;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox HangmanPictureBox;
         private System.Windows.Forms.GroupBox groupBox3;
     }
 }

@@ -15,11 +15,34 @@ namespace Hangman_Game
         //some variables I need
         int remain;
         int score;
-
+        int countImage;
+        List<Image> imageHangman;
 
         public Form1()
         {
             InitializeComponent();
+            imageHangman = new List<Image>()
+            {
+                Properties.Resources._1_Stage,
+                Properties.Resources._2_Stage,
+                Properties.Resources._3_Stage,
+                Properties.Resources._4_Stage,
+                Properties.Resources._5_Stage,
+                Properties.Resources._6_Stage,
+                Properties.Resources._7_Stage,
+                Properties.Resources._8_Stage,
+            };
+
+            initialize();
+        }
+
+        private void initialize()
+        {
+            countImage = 0;
+            score = 0;
+            HangmanPictureBox.BackgroundImage = imageHangman[countImage];
+           
+
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -51,6 +74,9 @@ namespace Hangman_Game
         {
             Button button = (Button)sender;
             button.BackColor = Color.Black;
+            countImage++;
+            HangmanPictureBox.BackgroundImage = imageHangman[countImage];
+
         }
 
         private void label14_Click(object sender, EventArgs e)
