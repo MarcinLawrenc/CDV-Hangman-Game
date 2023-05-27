@@ -1,6 +1,6 @@
 ﻿namespace Hangman_Game
 {
-    partial class Form2
+    partial class FormMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,50 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.buttonSetup = new System.Windows.Forms.Button();
+            this.buttonProgramQuit = new System.Windows.Forms.Button();
+            this.buttonPlay = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.HangmanPictureBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.HangmanPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonSetup
             // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.button1.Location = new System.Drawing.Point(31, 460);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 40);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Setup";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonSetup.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonSetup.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonSetup.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.buttonSetup.Location = new System.Drawing.Point(31, 460);
+            this.buttonSetup.Name = "buttonSetup";
+            this.buttonSetup.Size = new System.Drawing.Size(120, 40);
+            this.buttonSetup.TabIndex = 1;
+            this.buttonSetup.Text = "Setup";
+            this.buttonSetup.UseVisualStyleBackColor = true;
+            this.buttonSetup.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // buttonProgramQuit
             // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.button2.Location = new System.Drawing.Point(229, 460);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(120, 40);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Quit";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonProgramQuit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonProgramQuit.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonProgramQuit.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.buttonProgramQuit.Location = new System.Drawing.Point(229, 460);
+            this.buttonProgramQuit.Name = "buttonProgramQuit";
+            this.buttonProgramQuit.Size = new System.Drawing.Size(120, 40);
+            this.buttonProgramQuit.TabIndex = 2;
+            this.buttonProgramQuit.Text = "Quit";
+            this.buttonProgramQuit.UseVisualStyleBackColor = true;
+            this.buttonProgramQuit.Click += new System.EventHandler(this.buttonQuit_Click);
             // 
-            // button3
+            // buttonPlay
             // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.button3.Location = new System.Drawing.Point(108, 303);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(160, 80);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Play";
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonPlay.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonPlay.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonPlay.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.buttonPlay.Location = new System.Drawing.Point(108, 303);
+            this.buttonPlay.Name = "buttonPlay";
+            this.buttonPlay.Size = new System.Drawing.Size(160, 80);
+            this.buttonPlay.TabIndex = 3;
+            this.buttonPlay.Text = "Play";
+            this.buttonPlay.UseVisualStyleBackColor = true;
+            this.buttonPlay.Click += new System.EventHandler(this.buttonPlay_Click);
             // 
             // label1
             // 
@@ -96,7 +98,7 @@
             this.HangmanPictureBox.TabIndex = 33;
             this.HangmanPictureBox.TabStop = false;
             // 
-            // Form2
+            // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -104,11 +106,12 @@
             this.ClientSize = new System.Drawing.Size(381, 534);
             this.Controls.Add(this.HangmanPictureBox);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Name = "Form2";
+            this.Controls.Add(this.buttonPlay);
+            this.Controls.Add(this.buttonProgramQuit);
+            this.Controls.Add(this.buttonSetup);
+            this.Name = "FormMenu";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.FormMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.HangmanPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -117,9 +120,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonSetup;
+        private System.Windows.Forms.Button buttonProgramQuit;
+        private System.Windows.Forms.Button buttonPlay;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox HangmanPictureBox;
     }

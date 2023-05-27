@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Hangman_Game
 {
-    public partial class Form2 : Form
+    public partial class FormSetup : Form
     {
-        public Form2()
+        public FormSetup()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
