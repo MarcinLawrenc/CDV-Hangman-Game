@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Hangman_Game
 {
-    public partial class Form1 : Form
+    public partial class FormGame : Form
     {
         //some variables I need
         int remain;
@@ -18,7 +18,7 @@ namespace Hangman_Game
         int countImage;
         List<Image> imageHangman;
 
-        public Form1()
+        public FormGame()
         {
             InitializeComponent();
             imageHangman = new List<Image>()
@@ -76,7 +76,6 @@ namespace Hangman_Game
             button.BackColor = Color.Black;
             countImage++;
             HangmanPictureBox.BackgroundImage = imageHangman[countImage];
-
         }
 
         private void label14_Click(object sender, EventArgs e)
